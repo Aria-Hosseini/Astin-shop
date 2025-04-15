@@ -1,0 +1,31 @@
+{
+    "products":{
+        "status":true,
+        "data":[
+            {
+                "id":1,
+                "imgurl": "/img/c1.jpg",
+                "title": "محصول اول",
+                "price": 2000
+            },
+            {
+                "id":2,
+                "imgurl": "/img/c2.jpg",
+                "title": "محصول دوم",
+                "price":15000
+            },
+            {
+                "id":3,
+                "imgurl": "/img/c3.jpg",
+                "title": "محصول سوم",
+                "price": 32400
+            },
+            {
+                "id":4,
+                "imgurl": "/img/c4.jpg",
+                "title": "محصول چهارم",
+                "price": 75000
+            }
+        ]
+    }
+}
