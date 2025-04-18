@@ -1,7 +1,7 @@
 .scrollbar-hide::-webkit-scrollbar {
-    display: none; /* برای مرورگرهای WebKit مثل Chrome */
+    display: none;
 }
 .scrollbar-hide {
-    -ms-overflow-style: none; /* برای Internet Explorer */
-    scrollbar-width: none; /* برای Firefox */
+    -ms-overflow-style: none;
+    scrollbar-width: none; 
 }

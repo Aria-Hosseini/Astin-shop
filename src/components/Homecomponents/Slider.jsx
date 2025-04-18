@@ -151,7 +151,7 @@ export default function Slider() {
   ];
 
   return (
-    <div className=" bg-gray-100 flex flex-col items-center justify-start p-3">
+    <div className=" flex flex-col items-center justify-start p-3">
       <ImageSlider images={imageUrls} />
     </div>
   );

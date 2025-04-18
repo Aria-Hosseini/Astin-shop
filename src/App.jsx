@@ -7,6 +7,8 @@ import Product from './components/pages/Product';
 import Header from './components/layouts/Header';
 import Footer from './components/layouts/Footer';
 import Preloader from './Preloader'; 
+import Aboute from './components/pages/Aboute';
+import Contactus from './components/pages/Contactus';
 import { useState, useEffect } from 'react';
 
 function App() {
@@ -24,14 +26,16 @@ function App() {
       {Loading ? (
         <Preloader />
       ) : (
-        <div style={{ fontFamily: 'vazir' }}>
+        <div style={{ fontFamily: 'vazir'  }} className='bg-[#fcfdfc] text-[#0e1510]'>
           <Router>
             <Header />
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/shop" element={<Shop />} />
-              <Route path="/product" element={<Product />} />
+              <Route path="/product/:id" element={<Product />} />
               <Route path="/profile" element={<Profile />} />
+              <Route path='/aboute' element={<Aboute />} />
+              <Route path='/contact-us' element={<Contactus />} />
             </Routes>
             <Footer />
           </Router>
