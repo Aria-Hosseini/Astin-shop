@@ -6,7 +6,7 @@ export default function Header() {
   return (
     <header className="bg-[#0eb79b] text-white p-4 flex items-center justify-between flex-row-reverse shadow-2xl">
      
-      <Link to={"/"} ><div className="text-lg font-bold">فروشگاه</div></Link>
+      <Link to={"/"} ><div className="text-lg font-bold">آستین شاپ</div></Link>
 
         <div className='w-100 flex flex-row-reverse space-x-5  '>
             <button className='cursor-pointer' >دسته بندی</button>
@@ -30,15 +30,22 @@ export default function Header() {
             </div>
         </form>
 
+      <div className='flex flex-row items-center justify-center spce-x-10'>
 
-     
-      <div className="flex items-center space-x-2 space-x-reverse">
-      <svg className="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-        <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 4h1.5L9 16m0 0h8m-8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm-8.5-3h9.25L19 7H7.312"/>
-      </svg>
+        <div className='mr-8'>
+          <button className='h-10 w-30 text-sm bg-amber-50 text-black rounded-lg cursor-pointer'>ورود / ثبت نام</button>
+        </div>
 
-        <span>سبد خرید</span>
+        <Link to={"/cart"}>
+        <div className="">
+          <svg className="w-8 h-8 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+            <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 4h1.5L9 16m0 0h8m-8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm-8.5-3h9.25L19 7H7.312"/>
+          </svg>
+        </div>
+        </Link> 
+
       </div>
+      
 
      
       <div className="md:hidden">

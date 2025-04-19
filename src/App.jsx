@@ -9,7 +9,9 @@ import Footer from './components/layouts/Footer';
 import Preloader from './Preloader'; 
 import Aboute from './components/pages/Aboute';
 import Contactus from './components/pages/Contactus';
+import Cart from './components/pages/Cart';
 import { useState, useEffect } from 'react';
+import { CartProvider } from './context/CartContext';
 
 function App() {
   const [Loading, setLoading] = useState(true);
@@ -22,7 +24,7 @@ function App() {
   }, []);
 
   return (
-    <>
+    <CartProvider>
       {Loading ? (
         <Preloader />
       ) : (
@@ -36,12 +38,13 @@ function App() {
               <Route path="/profile" element={<Profile />} />
               <Route path='/aboute' element={<Aboute />} />
               <Route path='/contact-us' element={<Contactus />} />
+              <Route path='/cart' element={<Cart />}/>
             </Routes>
             <Footer />
           </Router>
         </div>
       )}
-    </>
+    </CartProvider>
   );
 }
 

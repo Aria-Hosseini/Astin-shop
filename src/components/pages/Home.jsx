@@ -30,6 +30,8 @@ export default function Home (){
             <div className="flex flex-row space-x-3 justify-center">
                 {Products.map((show)=>(<Cards products={show} />))}
             </div>
+
+           
             
         </div>
     )
