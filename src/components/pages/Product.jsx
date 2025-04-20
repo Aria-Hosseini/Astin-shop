@@ -73,7 +73,7 @@ export default function Product() {
 
   return (
     <div className="h-screen flex flex-row space-x-10 items-center justify-center">
-      <div className="w-100 bg-white rounded-lg shadow-md p-5 flex flex-col gap-4 h-100 justify-between">
+      <div className="w-100 bg-white rounded-lg shadow-lg p-5 flex flex-col gap-4 h-100 justify-between">
         <p dir="rtl" className="text-xl text-gray-700">
           قیمت: <span className="font-semibold">{product.price} تومان</span>
         </p>
@@ -114,7 +114,7 @@ export default function Product() {
         </div>
       </div>
 
-      <div className="w-100 bg-white rounded-lg shadow-md p-5 flex flex-col gap-4 h-100">
+      <div className="w-100 bg-white rounded-lg shadow-lg p-5 flex flex-col gap-4 h-100">
         <h1 dir="rtl" className="text-3xl font-bold border-b pb-2">{product.title}</h1>
         <p dir="rtl">{product.discription}</p>
       </div>
@@ -123,7 +123,7 @@ export default function Product() {
         <img
           src={product.imgurl}
           alt={product.title}
-          className="w-100 h-100 object-cover rounded-lg shadow-md"
+          className="w-100 h-100 object-cover rounded-lg shadow-lg"
         />
       </div>
     </div>

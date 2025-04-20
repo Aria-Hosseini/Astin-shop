@@ -10,6 +10,7 @@ import Preloader from './Preloader';
 import Aboute from './components/pages/Aboute';
 import Contactus from './components/pages/Contactus';
 import Cart from './components/pages/Cart';
+import Prepay from './components/pages/Prepay';
 import { useState, useEffect } from 'react';
 import { CartProvider } from './context/CartContext';
 
@@ -39,6 +40,7 @@ function App() {
               <Route path='/aboute' element={<Aboute />} />
               <Route path='/contact-us' element={<Contactus />} />
               <Route path='/cart' element={<Cart />}/>
+              <Route path='/prepay' element={<Prepay />} />
             </Routes>
             <Footer />
           </Router>

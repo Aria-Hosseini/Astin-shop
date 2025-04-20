@@ -1,9 +1,9 @@
 import { useCart } from '../../context/CartContext';
-import { Link } from 'react-router-dom';
+import { Link , useNavigate } from 'react-router-dom';
 
 export default function Cart() {
     const { cartItems, removeFromCart, updateQuantity } = useCart();
-
+    const navigate = useNavigate();
     if (cartItems.length === 0) {
         return (
             <div className="h-screen mx-auto p-5 border border-gray-200 rounded-lg mt-5 flex flex-col items-center justify-center">
@@ -66,7 +66,7 @@ export default function Cart() {
                 <h3 className="text-xl font-bold">
                     مجموع: {cartItems.reduce((total, item) => total + (item.price * item.quantity), 0)} تومان
                 </h3>
-                <button className="cursor-pointer w-full mt-4 bg-[#0eb79b] hover:bg-[#4b8d82] text-white font-bold py-2 px-4 rounded-lg transition duration-200">
+                <button onClick={()=>(navigate("/prepay"))} className="cursor-pointer w-full mt-4 bg-[#0eb79b] hover:bg-[#4b8d82] text-white font-bold py-2 px-4 rounded-lg transition duration-200">
                     ادامه
                 </button>
             </div>
