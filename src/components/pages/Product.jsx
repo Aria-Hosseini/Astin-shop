@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 import axios from "axios";
 import { useCart } from '../../context/CartContext';
 import "./Productstyle.css";
+import CommentSection from '../layouts/CommentSection';
 
 export default function Product() {
   const [product, setProduct] = useState([]);
@@ -72,6 +73,8 @@ export default function Product() {
   }, []);
 
   return (
+    
+    <div className="flex flex-col items-center justify-center">
     <div className="h-screen flex flex-row space-x-10 items-center justify-center">
       <div className="w-100 bg-white rounded-lg shadow-lg p-5 flex flex-col gap-4 h-100 justify-between">
         <p dir="rtl" className="text-xl text-gray-700">
@@ -125,6 +128,11 @@ export default function Product() {
           alt={product.title}
           className="w-100 h-100 object-cover rounded-lg shadow-lg"
         />
+      </div>
+
+      </div>
+      <div className="flex flex-row ">
+          <CommentSection />
       </div>
     </div>
   );

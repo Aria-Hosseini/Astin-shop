@@ -36,7 +36,7 @@ export default function Cards(props) {
                     </p>
                     <button
                         onClick={handleAddToCart}
-                        className="mt-2 p-2 inline-flex justify-center items-center gap-x-2 text-xs font-medium rounded-lg border border-transparent bg-blue-600 text-white hover:bg-blue-700 focus:outline-hidden focus:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none cursor-pointer"
+                        className="mt-2 p-2 inline-flex justify-center items-center gap-x-2 text-xs font-medium rounded-lg border border-transparent bg-[#0eb79b] text-white hover:bg-[#0eb79bc0] focus:outline-hidden focus:bg-[#0eb79b] disabled:opacity-50 disabled:pointer-events-none cursor-pointer"
                     >
                         افزودن به سبد
                     </button>
